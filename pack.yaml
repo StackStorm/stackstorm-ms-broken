@@ -1,0 +1,19 @@
+---
+ref: microsoft_broken_test
+name: Microsoft Test Pack - Broken
+description: |
+  Test pack that depends on specific versions of the MS test pack and a
+  conflicting version of excel
+keywords:
+  - example
+  - tests
+  - microsoft
+  - dependencies
+  - broken
+version: 0.0.1
+author: stanley
+email: stanley@localhost.local
+dependencies:
+  - https://github.com/StackStorm/stackstorm-ms.git
+  # ms pack requires excel=0.2.4 instead of 0.2.2
+  - excel=0.2.2
